@@ -102,5 +102,11 @@
             'year' => 2020,
             'poster' => 'https://i.scdn.co/image/ab67616d0000b27394eb091c2d81b671b498cb46'
         ],
+        [
+            'title' => '"Heroes" (2017 Remastered Version)',
+            'author' => 'David Bowie',
+            'year' => 1977,
+            'poster' => 'https://i.scdn.co/image/ab67616d0000b273bc1c63a5b66ab9ac3ea21672'
+        ],
     ]
 ?>
