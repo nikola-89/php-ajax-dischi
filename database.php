@@ -59,6 +59,36 @@
             "author" => "AC/DC",
             "year" => 1990,
             "poster" => "https://i.scdn.co/image/ab67616d0000b273449b39efb3f857f936fcc305"
-        ]
+        ],
+        [
+            "title" => "Elephant",
+            "author" => "The White Stripes",
+            "year" => 2003,
+            "poster" => "https://i.scdn.co/image/ab67616d0000b2733db111787584011d628de58a"
+        ],
+        [
+            "title" => "Mama Africa",
+            "author" => "Peter Tosh",
+            "year" => 1983,
+            "poster" => "https://i.scdn.co/image/ab67616d0000b2739c33fc76509d3b3e89bd5ce2"
+        ],
+        [
+            "title" => "Una Mattina",
+            "author" => "Ludovico Einaudi",
+            "year" => 2004,
+            "poster" => "https://i.scdn.co/image/91e8125956d9c8db86f812f052847e93b66f93c7"
+        ],
+        [
+            "title" => "Wanted on Voyage",
+            "author" => "George Ezra",
+            "year" => 2014,
+            "poster" => "https://i.scdn.co/image/ab67616d0000b2732b01e29ac167ad5be48f03ef"
+        ],
+        [
+            "title" => "Stadium Arcadium",
+            "author" => "Red Hot Chili Peppers",
+            "year" => 2006,
+            "poster" => "https://i.scdn.co/image/ab67616d0000b27309fd83d32aee93dceba78517"
+        ],
     ]
 ?>
