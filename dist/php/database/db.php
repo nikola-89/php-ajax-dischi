@@ -114,5 +114,5 @@
             'year' => 2019,
             'poster' => 'https://i.scdn.co/image/7e673935af4376c37b0970627ace761ef8475639'
         ],
-    ]
+    ];
 ?>
