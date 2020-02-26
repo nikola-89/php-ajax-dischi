@@ -13,6 +13,7 @@
         <title>Spotify [PHP]</title>
     </head>
     <body>
+        <!-- ************************ -->
         <header>
             <div class="wrapper">
                 <div class="navbar">
@@ -22,6 +23,7 @@
                 </div>
             </div>
         </header>
+        <!-- ************************ -->
         <main>
             <div class="wrapper">
                 <div class="cds-container">
@@ -40,5 +42,6 @@
                 </div>
             </div>
         </main>
+        <!-- ************************ -->
     </body>
 </html>
