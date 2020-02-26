@@ -85,12 +85,6 @@
             'poster' => 'https://i.scdn.co/image/ab67616d0000b2732b01e29ac167ad5be48f03ef'
         ],
         [
-            'title' => 'Stadium Arcadium',
-            'author' => 'Red Hot Chili Peppers',
-            'year' => 2006,
-            'poster' => 'https://i.scdn.co/image/ab67616d0000b27309fd83d32aee93dceba78517'
-        ],
-        [
             'title' => 'L\'Amour Toujours',
             'author' => 'Gigi D\'Agostino',
             'year' => 2006,
@@ -107,6 +101,12 @@
             'author' => 'David Bowie',
             'year' => 1977,
             'poster' => 'https://i.scdn.co/image/ab67616d0000b273bc1c63a5b66ab9ac3ea21672'
+        ],
+        [
+            'title' => 'Monty Python\'s Total Rubbish! The (Mostly) Charisma Collection',
+            'author' => 'Monty Python',
+            'year' => 2019,
+            'poster' => 'https://i.scdn.co/image/7e673935af4376c37b0970627ace761ef8475639'
         ],
     ]
 ?>

@@ -16,12 +16,10 @@
     </head>
     <body>
         <header>
-            <div class="header">
-                <div class="wrapper">
-                    <div class="navbar">
-                        <div class="logo">
-                            <img src="https://i.imgur.com/1Yn1xQ6.png" alt="logo"/>
-                        </div>
+            <div class="wrapper">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="https://i.imgur.com/1Yn1xQ6.png" alt="logo"/>
                     </div>
                 </div>
             </div>
@@ -32,9 +30,9 @@
                     <?php foreach ($database as $album) { ?>
                         <div class="cd">
                             <img src="<?php echo $album['poster']; ?>" alt="<?php echo $album['title']; ?>">
-                            <h3><?php echo $album['title']; ?></h3>
-                            <span class="author"><?php echo $album['author']; ?></span>
-                            <span class="year"><?php echo $album['year']; ?></span>
+                            <h2><?php echo $album['title']; ?></h2>
+                            <h3><?php echo $album['author']; ?></h3>
+                            <h5><?php echo $album['year']; ?></h5>
                         </div>
                     <?php } ?>
                 </div>
