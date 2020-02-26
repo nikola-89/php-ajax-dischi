@@ -114,5 +114,12 @@
             'year' => 2019,
             'poster' => 'https://i.scdn.co/image/7e673935af4376c37b0970627ace761ef8475639'
         ],
-    ]
+    ];
+    header('Content-Type: application/json');
+    if (!empty($database)) {
+        $results = ['success' => true, 'data' => $database];
+    } else {
+        $results = ['success' => false, 'message' => 'database error', 'data' => null];
+    }
+    echo json_encode($results);
 ?>

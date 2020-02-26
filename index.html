@@ -7,9 +7,10 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="dist/app.css">
         <script src="dist/app.js" charset="utf-8"></script>
-        <title>Spotify</title>
+        <title>Spotify [APi]</title>
     </head>
     <body>
+        <!-- ************************ -->
         <header>
             <div class="wrapper">
                 <div class="navbar">
@@ -19,19 +20,26 @@
                 </div>
             </div>
         </header>
+        <!-- ************************ -->
         <main>
             <div class="wrapper">
                 <div class="cds-container">
-                    <?php foreach ($database as $album) { ?>
-                        <div class="cd">
-                            <img src="<?php echo $album['poster']; ?>" alt="<?php echo $album['title']; ?>">
-                            <h2><?php echo $album['title']; ?></h2>
-                            <h3><?php echo $album['author']; ?></h3>
-                            <h5><?php echo $album['year']; ?></h5>
-                        </div>
-                    <?php } ?>
                 </div>
             </div>
         </main>
+        <!-- ************************ -->
+        <script id="cdBuilder" type="text/x-handlebars-template">
+            <div class="cd">
+                <img src="{{poster}}" alt="{{title}}">
+                <h2>{{title}}</h3>
+                <h3>{{author}}</span>
+                <h5>{{year}}</span>
+            </div>
+        </script>
+        <!-- ************************ -->
+        <script id="error" type="text/x-handlebars-template">
+            <h2>{{title}}</h3>
+        </script>
+        <!-- ************************ -->
     </body>
 </html>
