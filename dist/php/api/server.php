@@ -61,6 +61,12 @@
             'poster' => 'https://i.scdn.co/image/ab67616d0000b273449b39efb3f857f936fcc305'
         ],
         [
+            'title' => 'The Princess, Pt. Two',
+            'author' => 'Parov Stelar',
+            'year' => 2012,
+            'poster' => 'https://i.scdn.co/image/ab67616d0000b273b6efd26ce36980c408104fa0'
+        ],
+        [
             'title' => 'Elephant',
             'author' => 'The White Stripes',
             'year' => 2003,

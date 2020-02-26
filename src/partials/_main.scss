@@ -1,10 +1,17 @@
 
 main {
     background: $colorBackgroundMain;
+    min-height: 100vh;
     .cds-container {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         padding: 70px 0;
+        & h2 {
+            font-size: 30px;
+            font-family: "Circular Book";
+            color: #FFF;
+        }
         .cd {
             display: flex;
             flex-direction: column;

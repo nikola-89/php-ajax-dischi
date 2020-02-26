@@ -19,21 +19,21 @@
   box-sizing: border-box;
 }
 
+body {
+  min-width: 800px;
+}
+
 /* ************************* */
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 16px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #5E5A5C;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* ************************* */
-
-body {
-  min-height: 100vh;
-}
 
 .wrapper {
   max-width: 1100px;
@@ -62,12 +62,20 @@ header .navbar .logo img {
 
 main {
   background: #121212;
+  min-height: 100vh;
 }
 
 main .cds-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 70px 0;
+}
+
+main .cds-container h2 {
+  font-size: 30px;
+  font-family: "Circular Book";
+  color: #FFF;
 }
 
 main .cds-container .cd {

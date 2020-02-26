@@ -16,7 +16,7 @@ $colorTitle: #FFF;
 $colorAuthor: darken($colorTitle, 50%);
 $colorYear: darken($colorTitle, 70%);
 // Color Generic
-$colorScrollbar: #5E5A5C;
+$colorScrollbar: hsla(0, 0% ,100% , .3);
 // Font CDs
 $fontTitle: "Circular Bold";
 $fontAuthor: "Circular Book";

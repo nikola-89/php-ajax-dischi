@@ -19,18 +19,18 @@
     box-sizing: border-box;
 }
 
+body {
+    min-width: 800px;
+}
+
 /* ************************* */
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 16px;
 }
 ::-webkit-scrollbar-thumb {
     background-color: $colorScrollbar;
 }
 /* ************************* */
-
-body {
-    min-height: 100vh;
-}
 
 .wrapper {
     max-width: $maxWrapperWidthSize;
