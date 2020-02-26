@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "Circular Book";
+    src: url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Book.3466e0ec.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Circular Bold";
+    src: url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Bold.8d0a45cc.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Circular Light";
+    src: url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.afd9ab26.woff2") format("woff2");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +30,6 @@
 /* ************************* */
 
 body {
-    background: $colorBackgroundMain;
     min-height: 100vh;
 }
 

@@ -1,34 +1,41 @@
-.cds-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 70px 0;
-    .cd {
+
+main {
+    background: $colorBackgroundMain;
+    .cds-container {
         display: flex;
-        flex-direction: column;
-        flex-basis: calc((100% / 3) - 20px);
-        padding: 20px;
-        margin: 10px;
-        height: 450px;
-        background-color: $colorBackgroundCds;
-        text-align: center;
-        & img {
-            max-width: 100%;
-            cursor: pointer;
-        }
-        & h2 {
-            margin: 10px 0;
-            color: $colorTitle;
-            font-size: 18px;
-            text-transform: uppercase;
-        }
-        & h3 {
-            color: $colorAuthor;
-            font-size: 16px;
-        }
-        & h5 {
-            color: $colorYear;
-            margin-top: 10px;
-            font-size: 14px;
+        flex-wrap: wrap;
+        padding: 70px 0;
+        .cd {
+            display: flex;
+            flex-direction: column;
+            flex-basis: calc((100% / 3) - 20px);
+            padding: 20px;
+            margin: 10px;
+            height: auto;
+            background-color: $colorBackgroundCds;
+            text-align: center;
+            & img {
+                max-width: 100%;
+                cursor: pointer;
+            }
+            & h2 {
+                margin: 10px 0;
+                color: $colorTitle;
+                font-size: 18px;
+                font-family: $fontTitle;
+                text-transform: uppercase;
+            }
+            & h3 {
+                color: $colorAuthor;
+                font-size: 16px;
+                font-family: $fontAuthor;
+            }
+            & h5 {
+                color: $colorYear;
+                margin-top: 10px;
+                font-size: 14px;
+                font-family: $fontYear;
+            }
         }
     }
 }

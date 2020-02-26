@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Circular Book";
+  src: url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Book.3466e0ec.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Circular Bold";
+  src: url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Bold.8d0a45cc.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Circular Light";
+  src: url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.afd9ab26.woff2") format("woff2");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,13 +27,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #b3b3b3;
+  background-color: #5E5A5C;
 }
 
 /* ************************* */
 
 body {
-  background: #121212;
   min-height: 100vh;
 }
 
@@ -46,43 +60,50 @@ header .navbar .logo img {
   width: 50px;
 }
 
-.cds-container {
+main {
+  background: #121212;
+}
+
+main .cds-container {
   display: flex;
   flex-wrap: wrap;
   padding: 70px 0;
 }
 
-.cds-container .cd {
+main .cds-container .cd {
   display: flex;
   flex-direction: column;
   flex-basis: calc((100% / 3) - 20px);
   padding: 20px;
   margin: 10px;
-  height: 450px;
+  height: auto;
   background-color: #000;
   text-align: center;
 }
 
-.cds-container .cd img {
+main .cds-container .cd img {
   max-width: 100%;
   cursor: pointer;
 }
 
-.cds-container .cd h2 {
+main .cds-container .cd h2 {
   margin: 10px 0;
   color: #FFF;
   font-size: 18px;
+  font-family: "Circular Bold";
   text-transform: uppercase;
 }
 
-.cds-container .cd h3 {
+main .cds-container .cd h3 {
   color: gray;
   font-size: 16px;
+  font-family: "Circular Book";
 }
 
-.cds-container .cd h5 {
+main .cds-container .cd h5 {
   color: #4d4d4d;
   margin-top: 10px;
   font-size: 14px;
+  font-family: "Circular Light";
 }
 
