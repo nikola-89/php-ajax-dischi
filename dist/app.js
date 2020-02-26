@@ -15841,7 +15841,7 @@ function print(data) {
   var printCds = Handlebars.compile($('#cdBuilder').html());
   var printError = Handlebars.compile($('#error').html());
 
-  if (data.success && data.data.lenght != 0) {
+  if (data.success && data.data != null) {
     for (var i = 0; i < data.data.length; i++) {
       $('.cds-container').append(printCds(data.data[i]));
     }
