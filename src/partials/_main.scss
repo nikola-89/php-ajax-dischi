@@ -8,9 +8,9 @@ main {
         .cd {
             display: flex;
             flex-direction: column;
-            flex-basis: calc((100% / 3) - 20px);
+            flex-basis: calc((100% / 3) - #{$marginWrapper * 2});
             padding: 20px;
-            margin: 10px;
+            margin: $marginWrapper;
             height: auto;
             background-color: $colorBackgroundCds;
             text-align: center;

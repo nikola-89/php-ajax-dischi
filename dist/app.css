@@ -49,6 +49,7 @@ header {
 
 header .navbar {
   display: flex;
+  padding: 0 10px;
 }
 
 header .navbar .logo {

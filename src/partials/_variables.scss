@@ -1,16 +1,16 @@
 // ****************************************
 // Header
 // ------
-// Color Header
+// Color
 $colorBackgroundHeader: #000;
 // ****************************************
 
 // ****************************************
 // Main
 // ----
-// Color Main
+// Color
 $colorBackgroundMain: #121212;
-// Color Main -CDs
+// Color CDs
 $colorBackgroundCds: #000;
 $colorTitle: #FFF;
 $colorAuthor: darken($colorTitle, 50%);
@@ -28,4 +28,5 @@ $fontYear: "Circular Light";
 // ----
 // Size Wrapper
 $maxWrapperWidthSize: 1100px;
+$marginWrapper: 10px;
 // ****************************************

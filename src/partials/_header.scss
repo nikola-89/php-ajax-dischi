@@ -5,6 +5,7 @@ header {
     background-color: $colorBackgroundHeader;
     .navbar {
         display: flex;
+        padding: 0 $marginWrapper;
         .logo {
             align-self: center;
             & img {
