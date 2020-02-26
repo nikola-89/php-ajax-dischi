@@ -30,9 +30,13 @@ function print(data) {
                 printCds(data.data[i])
             );
         }
+    } else if (!data.success) {
+        $('.cds-container').append(
+            printError({title : data.message})
+        );
     } else {
         $('.cds-container').append(
-            printError({title : 'Ops! Qualcosa è andato storto!'})
+            printError({title : 'Connessione al server fallita'})
         );
     }
 }

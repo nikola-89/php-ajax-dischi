@@ -119,7 +119,7 @@
     if (!empty($database)) {
         $results = ['success' => true, 'data' => $database];
     } else {
-        $results = ['success' => false, 'message' => 'database error', 'data' => null];
+        $results = ['success' => false, 'message' => 'Database Error', 'data' => null];
     }
     echo json_encode($results);
 ?>

@@ -15845,9 +15845,13 @@ function print(data) {
     for (var i = 0; i < data.data.length; i++) {
       $('.cds-container').append(printCds(data.data[i]));
     }
+  } else if (!data.success) {
+    $('.cds-container').append(printError({
+      title: data.message
+    }));
   } else {
     $('.cds-container').append(printError({
-      title: 'Ops! Qualcosa è andato storto!'
+      title: 'Connessione al server fallita'
     }));
   }
 } // ***************************
