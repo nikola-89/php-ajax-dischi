@@ -37,6 +37,12 @@
             'poster' => 'https://i.scdn.co/image/ab67616d0000b27323444c767d67417474f103e3'
         ],
         [
+            'title' => 'Beggars Banquet (50th Anniversary Edition)',
+            'author' => 'The Rolling Stones',
+            'year' => 1968,
+            'poster' => 'https://i.scdn.co/image/ab67616d0000b27344934a06d21864415376f5f2'
+        ],
+        [
             'title' => 'Supersantos',
             'author' => 'Mannarino',
             'year' => 2011,
@@ -59,6 +65,12 @@
             'author' => 'AC/DC',
             'year' => 1990,
             'poster' => 'https://i.scdn.co/image/ab67616d0000b273449b39efb3f857f936fcc305'
+        ],
+        [
+            'title' => 'Sticky Fingers (Remastered)',
+            'author' => 'The Rolling Stones',
+            'year' => 1971,
+            'poster' => 'https://i.scdn.co/image/ab67616d0000b273a1d9c9969f2a7ed27e449a3c'
         ],
         [
             'title' => 'The Princess, Pt. Two',
