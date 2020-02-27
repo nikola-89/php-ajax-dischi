@@ -17,6 +17,11 @@
                     <div class="logo">
                         <img src="https://i.imgur.com/1Yn1xQ6.png" alt="logo"/>
                     </div>
+                    <div class="select">
+                        <select>
+                            <option value="" disabled selected hidden>Seleziona un artista</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </header>
@@ -39,6 +44,10 @@
         <!-- ************************ -->
         <script id="error" type="text/x-handlebars-template">
             <h2>{{title}}</h3>
+        </script>
+        <!-- ************************ -->
+        <script id="select" type="text/x-handlebars-template">
+            <option value="{{author}}">{{author}}</option>
         </script>
         <!-- ************************ -->
     </body>
