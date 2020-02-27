@@ -15821,10 +15821,11 @@ var Handlebars = __webpack_require__(/*! handlebars */ "./node_modules/handlebar
 $(document).ready(function () {
   var url = 'http://localhost:8888/php-ajax-dischi/dist/php/api/server.php';
   apiRequests(url, null, null);
+  apiRequests(url, 'author-list', 'list');
   $('.select select').on('change', function (e) {
     var optionSelected = $("option:selected", this);
     var valueSelected = this.value;
-    swiffer();
+    cdSwiffer();
     apiRequests(url, 'author', valueSelected);
   });
 }); // ***************************
@@ -15836,7 +15837,12 @@ function apiRequests(url, param, value) {
     method: "GET",
     success: function success(data) {
       console.log(data);
-      print(data);
+
+      if (param == 'author-list') {
+        select(data);
+      } else {
+        print(data);
+      }
     },
     error: function error(data) {
       print(null);
@@ -15850,8 +15856,6 @@ function print(data) {
   var printError = Handlebars.compile($('#error').html());
 
   if (data.success && data.data != null) {
-    select(data);
-
     for (var i = 0; i < data.data.length; i++) {
       $('.cds-container').append(printCds(data.data[i]));
     }
@@ -15868,16 +15872,23 @@ function print(data) {
 
 
 function params(param, value) {
-  if (value != null && value.length != 0) {
+  if (value == null) {
+    return;
+  } else if (value.length != 0) {
     switch (param) {
       case 'author':
         return {
           'author': value
         };
-    }
-  }
 
-  return;
+      case 'author-list':
+        return {
+          'author-list': value
+        };
+    }
+  } else {
+    return;
+  }
 } // ***************************
 
 
@@ -15886,7 +15897,9 @@ function select(data) {
 
   if (data.success && data.data != null) {
     for (var i = 0; i < data.data.length; i++) {
-      $('.select select').append(printSelect(data.data[i]));
+      $('.select select').append(printSelect({
+        author: data.data[i]
+      }));
     }
 
     $('.select').css("display", "block");
@@ -15896,7 +15909,7 @@ function select(data) {
 } // ***************************
 
 
-function swiffer() {
+function cdSwiffer() {
   $('.cds-container .cd').remove();
 } // ***************************
 
